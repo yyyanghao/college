@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>作者信息</title>
+		<link rel="stylesheet" href="css/person_web.css" />
+	</head>
+	<body>
+	<div class="bod">
+		<div class="top">
+		   <div class="logo">
+		   	<img src="img/KONG-template_03.png"/><span class="font">keith</span>
+		   </div><!--logo end-->
+		   <div class="menu">
+		   	<ul>
+		   		<li>menu>>></li>
+		   		<div class="dropmenu">
+		   		<ul>
+ 				<li><a href="#">首页</a></li>
+ 				<li><a href="#filp1">关于我</a></li>
+ 				<li><a href="#filp2">我的作品</a></li>
+ 				<li><a href="#footer">联系我</a></li>
+ 				<li><a href="#">其他</a></li>
+ 			    </ul>	
+		   		</div>
+		   	</ul>
+		   </div><!--menu end-->
+		   <div class="person_left">
+		    	<img src="img/IMG_2905.jpg"/>
+		   </div>
+		   <div class="person_right">
+		   		<span class="person_name">杨浩|</span><span class="person_Ename">I'm keith,welcome to play my game.</span>
+		   </div>
+		</div><!--top end-->
+		<div class="wapp">
+			<div class="wapp_top">
+				<p class="filp1" id="filp1"><a>About Me</a></p>
+				<img src="img/KONG-template_11.jpg"/>
+				<div class="word1">
+					<p>90后汉子一枚，活跃在各个技术社区，专注Web前端。热爱思考，热爱开源分享，爱好读书，羽毛球，乒乓球，当然非常热爱写代码了，
+
+目前从事Web前端开发工作，这是我的个人作品，如有不足请多多关照，谢谢。
+					</p>
+				</div>
+			</div><!--wapp_top end-->
+			<div class="wapp_mid">
+				<p class="filp2" id="filp2">My education</p>
+				<img src="img/KONG-template_39.jpg"/>
+				<div class="word2">
+					<table>
+						<th>学习经历</th>
+						<tr>
+							<td>大学</td>
+							<td>2012-2016</td>
+							<td>合肥师范学院</td>
+						</tr>
+					</table>
+					<p><a href="https://github.com/yyyanghao">我的Gethub</a></p>
+					<p>更多敬请期待.......</p>
+				</div>
+			</div><!--wapp_mid end-->
+			<div class="wapp_end">
+				<p>Photo  Wall</p>
+				<img class="img1" src="img/photo.png"/>
+				<ul>
+					<li><a href="img/新建文件夹-(3)IMG_2905.jpg" onclick="showpic(this);return false;"><img src="img/2.jpg"/></li>
+					<li><a href="img/FullSizeRender(1).jpg" onclick="showpic(this);return false;"><img src="img/1.jpg"/></a></li>
+					<li><a href="img/IMG_3031.jpg" onclick="showpic(this);return false;"><img src="img/3.jpg"/></a></li>
+				</ul>
+					<div class="photo">
+					<img id="placeholder" src="img/FullSizeRender(1).jpg"/>
+					</div>
+			</div><!--wapp_end end-->
+		</div><!--wapp end-->
+		<div class="footer"id="footer">
+			<p class="con">Contect With ME</p>
+			<div class="contect">
+					<ul>
+					  <li><a href="#"> <img src='img/contect1.png'/></a> 
+					  	<div class="pic1"><img src="img/1.png"/></div>
+					 </li>
+					 
+					 	
+					</ul>
+				 <div>
+			<p class="copy">&copy;2016  All Rights Reserved Theme By Yanghao</p>
+		</div><!--footer end-->
+	</div><!-- bod end-->	
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+   <script>
+	$(document).ready(function(){
+		$(".filp1").click(function(){
+			$(".word1").slideToggle();
+		});
+		$(".filp2").click(function(){
+			$(".word2").slideToggle();
+		});
+		
+	})
+	function showpic(whichpic){
+				var placeholder = document.getElementById("placeholder");
+				var source = whichpic.getAttribute("href");
+				placeholder.setAttribute("src",source);
+			}
+   </script>
+	</body>
+</html>

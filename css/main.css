@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑",arial,"arial black";
+	list-style: none;
+}
+body{
+	background: rgba(0, 0, 0, 0) url(../img/bg-visual.jpg) no-repeat fixed 50% 50% / cover ;
+}
+ .bg{
+ 	width: 1024px;
+ 	height: 684px;
+ 	
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	margin: 0 auto;
+ }
+h1{
+	text-align: left;
+	margin-top: 60px;
+	color: white;
+}
+.contain{
+	height: 20px;
+	background-color: #000000;
+}
+.header{
+	height: 39px;
+	background-image: url(../img/KONG-template_01.png);
+	
+}
+.top{
+	height: 39px;
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+.logo{
+	width: 250px;
+	float: left;
+
+}
+.title{
+	padding-left:30px ;
+}
+.menu{
+	width: 550px;
+	height: 39px;
+	float: right;
+
+}
+.menu li{
+	float: right;
+	line-height: 39px;
+	padding-right: 20px;
+}
+.menu a{
+	text-decoration: none;
+	color:#000000;
+	font-size: 16px;
+}
+.menu a:hover{
+	color: red;
+	display: block;
+	border-bottom: 2px solid red;
+}
+.login{
+	width: 200px;
+	height:300px;
+	top: 50%;
+	left: 50%;
+	margin-top:-100px;
+	margin-left:-100px;
+	position: absolute;
+}
+.form{
+			    width: 200px;
+				height: 300px;
+				position: absolute;
+				top:50%;
+				left: 50%;
+				margin-top: -100px;
+				margin-left: -100px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:white;  
+    text-align: center;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:white;
+       text-align: center;
+}
+
+:-ms-input-placeholder,
+:-ms-input-placeholder {
+    color:white;
+     text-align: center;
+}
+
+::-webkit-input-placeholder,
+::-webkit-input-placeholder {
+     text-align: center;
+    color:white;
+}
+.txt{
+	border: 1px solid white;
+	width: 190px;
+	border-radius:5px ;
+	background-color: transparent;
+	color: white;
+}
+
+legend{
+	color: white;
+}
+.btn{
+	background-image: url(../img/Login-Page-Template_03.png);
+	width: 72px;
+	height: 28px;
+	background-size: cover;
+}
+.login a{
+	float: right;
+	color: white;
+	text-decoration: none;
+	padding-right:20px ;
+}
+.login a:hover{
+	color: red;
+}
+.btn1{
+	border: 1px solid white;
+	width: 190px;
+	border-radius:5px ;
+	background-color: transparent;
+	color: white;
+}	
+.video{
+	width: 1000px;
+	height: 200px;
+	clear: both;
+	margin: 0 auto;
+	margin-top: 300px;
+	padding-left: 100px;
+}
+.video div{
+	float: left;
+}
+.video p {
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

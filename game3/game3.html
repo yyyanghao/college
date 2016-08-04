@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>迷宫游戏</title>
+  <style>
+   body{
+   	background-image: url(../game1/images/bg_repeat.png) ;
+   	background-repeat:repeat-y ;
+   	background-size: cover;
+   }
+  	.s{
+  		width: 600px;
+  		height: 500px;
+  		position: absolute;
+  		left: 40%;
+  		top: 10%;
+  		float: left;
+  		}
+  	.end{
+  		width: 500px;
+  		height: 500px;
+  		background-image: url(../game2/images/table.jpg);
+  		z-index: 999;
+  		position: absolute;
+  		display: none;
+  		left: 35%;
+  		top: 10%;
+  	}
+  end p{
+	text-align: center;
+	color: white;
+}
+.words1{
+	font-size: 36px;
+	font-family: "arial narrow";
+	color: white;
+	margin-left:150px ;
+}
+.stat{
+	margin-left:100px ;
+}
+.restart{
+	float: left;
+	margin-top: 100px;
+	margin-left:100px ;
+
+}
+.endgame{
+	float:right;
+	margin-top: 100px;
+	margin-right:100px ;
+}
+.end form{
+	text-align: center;
+}
+.restart a,.endgame a{
+	text-decoration: none;
+	color: white;
+}
+.restart a:hover,.endgame a:hover{
+	color:red;
+}
+  </style>
+
+</head>
+
+<body>
+	<div class="end" id="end">
+		<p class="words1">game over :</p>
+	     	   
+    	    <div class="stat"><p>你的成绩是：步数: <span id="step">0</span> 关卡: <span id="complete">0</span></div>
+    	    	<form action="http://localhost:8080/college/rank3.php" method="post">
+    	       	<input type="text" name="rank3" id="rank3" value="" readonly="readonly"/>
+    	       	<input type="submit" value="提交"/>
+    	       </form>
+  			   <span class="restart"><a href="http://localhost:8080/college/game3/game3.html">重新开始</a></span>
+  			   <span class="endgame"><a href="http://localhost:8080/college/index.html">结束游戏</a></span>
+		</div>
+<div class="s">
+	
+		     	<select id="hard" onchange="change()">
+		     	<option value="1">简单</option>
+		     	<option value="2">一般</option>
+		     	<option value="3">困难</option>
+		     </select>
+		   <div><input type="button" name="" id="" value="开始游戏" onclick="game_start()" /></div>
+			 <div><input type="button" name="" id="" value="重新开始" onclick="window.location.reload();" /></div>
+		
+      <canvas id="canvas" style="background:#eeeeee"></canvas>
+      
+		     <p>time:<span id="timer">5</span></p>
+</div>
+ <script src="js/index.js"></script>
+
+</body>
+
+</html>

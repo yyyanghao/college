@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑",arial,"agency fb";
+	font-size: 12px;
+	border: 0;
+}
+body{
+	background-color:whitesmoke;
+}
+.bod{
+}
+.contain{
+	height: 20px;
+	background-color: #000000;
+}
+.header{
+	height: 39px;
+	background-image: url(../img/KONG-template_01.png);
+	
+}
+.top{
+	height: 39px;
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+.logo{
+	width: 250px;
+	float: left;
+
+}
+.title{
+	padding-left:30px ;
+}
+.menu{
+	width: 550px;
+	height: 39px;
+	float: right;
+
+}
+.menu li{
+	float: right;
+	line-height: 39px;
+	padding-right: 20px;
+}
+.menu a{
+	text-decoration: none;
+	color:#000000;
+	font-size: 16px;
+}
+.menu a:hover{
+	color: red;
+	display: block;
+	border-bottom: 2px solid red;
+}
+.banner{
+	width: 800px;
+	height: 300px;
+	margin: 0 auto;
+	
+}
+.main{
+	width: 800px;
+	background-color: antiquewhite;
+	margin: 0 auto;
+	height: 450px;
+}
+.game1_left{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.game1_right{
+	float: left;
+	width: 400px;
+	height: 100px;
+	border: 1px solid gainsboro;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.game2_left{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.game2_right{
+	float: left;
+	width: 400px;
+	height: 100px;
+	border: 1px solid gainsboro;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.game3_left{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.game3_right{
+	float: left;
+	width: 400px;
+	height: 100px;
+	border: 1px solid gainsboro;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.footer{
+	width: 100%;
+	height: 50px;
+	background-color: #DDDDDD;
+	margin: 0 auto;
+}
+.copy{
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+}
+ul{
+	width: 300px;
+	margin: 0 auto;
+}
+.copy li{
+	list-style: none;
+	float: left;
+	padding-left:40px ;
+}
+.copy li a{
+	text-decoration: none;
+	color: black;
+}
+.copy li a:hover{
+	color: red;
+}
+.copy_end{
+	margin-left: 300px;
+}
+.word{
+	margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>毕业设计</title>
+	<link rel="stylesheet" href="css/untangle.css" />
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	     <div class="end" id="end">
+	     	   <p class="words1">game over :</p>
+	     	   <p>你的成绩是：</p>
+    	       <p>关卡 <span id="level">0</span>, 关卡进度: <span id="progress">0</span>%</p>
+    	       <form action="http://localhost:8080/college/rank.php" method="post">
+    	       	<input type="text" name="rank" id="rank" value="" readonly="readonly"/>
+    	       	<input type="submit" value="提交"/>
+    	       </form>
+  			   <span class="restart"><a href="http://localhost:8080/college/game1/game1.html">重新开始</a></span>
+  			   <span class="endgame"><a href="http://localhost:8080/college/index.html">结束游戏</a></span>
+         </div>
+         
+      <div class="bod">   
+         <div class="music">
+          	<audio controls="controls">
+				<source src="music/苏打绿 - 下雨的夜晚.mp3"></source>
+			</audio>
+         </div>
+	<section id="page">
+		<header>
+			<h1><i>试试你可以到第几关</i></h1>
+		</header>	
+		
+		     <section id="menu-scene" class="scene">
+		     	<select id="hard" onchange="change()">
+		     	<option value="1">简单</option>
+		     	<option value="2">一般</option>
+		     	<option value="3">困难</option>
+		     </select>
+			<input type="button" name="" id="" value="开始游戏" onclick="game_start()" />
+			<input type="button" name="" id="" value="重新开始" onclick="window.location.reload();" />			
+		      </section>
+		
+		  <section id="layers">
+			<canvas id="bg" width="768" height="440">
+				Sorry, your web browser does not support canvas content.
+			</canvas>
+			<canvas id="guide" width="768" height="440"></canvas>
+			<canvas id="game" width="768" height="440"></canvas>
+			<canvas id="ui" width="768" height="440"></canvas>
+		    </section>
+		<p>time:<span id="timer">60</span></p>
+		
+	</section>
+ </div>  
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/html5games.untangle.js"></script>
+</body>
+</html>
